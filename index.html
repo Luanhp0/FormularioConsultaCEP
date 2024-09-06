@@ -11,13 +11,13 @@
     <div class="todo">
         
         <form action="" class="formulario">
-            <h1>Seu endereço</h1><br>
+            <h1>Consulta endereço</h1><br>
             <label for="cep">CEP</label>
-            <input type="text" name="cep" id="cep" readonly><br>
+            <input type="text" id="cep" name="cep" onblur="consultarCEP(this.value)" /><br>
             <label for="bairro">Bairro:</label>
-            <input type="text" id="bairro" name="bairro" readonly />
+            <input type="text" id="bairro" name="bairro" readonly /><br>
             <label for="lagradrouro">Lagradouro</label>
-            <input type="text" name="lagradouro" id="lagradouro" readonly><br>
+            <input type="text" name="logradouro" id="logradouro" readonly><br>
             <label for="cidade">Cidade</label>
             <input type="text" name="cidade" id="cidade" readonly><br>
             <label for="estado">Estado</label>
